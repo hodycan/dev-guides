@@ -18,7 +18,7 @@
 ## testing
 server must be running
 
-`$ python manage.py tests [app]`
+`$ python manage.py test [app]`
 
 ## debug checklist
 1. urls
