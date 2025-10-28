@@ -1,3 +1,7 @@
+---
+title: Django Templates
+render_with_liquid: false
+---
 
 ## template boiler plate
 
