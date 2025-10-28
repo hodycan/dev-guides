@@ -1,3 +1,6 @@
+---
+---
+
 # django deployment checklist
 
 overview:
