@@ -111,7 +111,7 @@ DATABASES = {
 in render settings:
 
 - set root directory to django root
-- build command: `pip install -r requirements.txt && python manage.py collectstatic --noinput`
+- build command: `pip install -r ../requirements.txt && python manage.py collectstatic --noinput`
 - start command: `gunicorn DJANGO_PROJECT_NAME.wsgi:application --bind 0.0.0.0:$PORT`
 
 
