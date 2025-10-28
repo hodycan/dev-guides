@@ -1,0 +1,15 @@
+pip favs.md
+
+python-dotenv
+gunicorn
+django
+whitenoise
+psycopg2
+stripe
+virtualenv
+setuptools
+mkdocs
+mkdocs-material
+mkdocs-table-reader-plugin
+pytest
+markdown-icons
