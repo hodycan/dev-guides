@@ -1,11 +1,10 @@
 ---
 title: Django Templates
-render_with_liquid: false
 ---
-
 ## template boiler plate
 
-```
+{% raw %}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,3 +26,4 @@ render_with_liquid: false
   </body>
 </html>
 ```
+{% endraw %}
