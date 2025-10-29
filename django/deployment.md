@@ -3,13 +3,15 @@
 
 # django deployment checklist
 
-overview:
+checklist:
 
-1. gunicorn
-2. environment variables
-3. static files + whitenoise
-4. database set up (if applicable
-5. requirements.txt
+1. install gunicorn, python-dotenv, whitenoise
+2. environment variables - .env, render settings
+3. allowed hosts
+4. static files + whitenoise
+5. database set up (if applicable)
+6. requirements.txt
+7. render settings - root dir, build and start commands
 
 ## 1. prep
 
@@ -105,6 +107,8 @@ DATABASES = {
 ```
 
 ## 3. freeze requirements
+
+cd to repo root:
 
 - `pip freeze > requirements.txt`
 
