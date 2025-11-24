@@ -13,4 +13,7 @@
 - mkdocs-material
 - mkdocs-table-reader-plugin
 - pytest
+- pytest-django
 - markdown-icons
+- pre-commit
+- ruff
