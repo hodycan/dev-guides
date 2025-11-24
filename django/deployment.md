@@ -3,13 +3,15 @@
 
 # django deployment checklist
 
-overview:
+checklist:
 
-1. gunicorn
-2. environment variables
-3. static files + whitenoise
-4. database set up (if applicable
-5. requirements.txt
+1. install gunicorn, python-dotenv, whitenoise
+2. environment variables - .env, render settings
+3. allowed hosts
+4. static files + whitenoise
+5. database set up (if applicable)
+6. requirements.txt
+7. render settings - root dir, build and start commands
 
 ## 1. prep
 
@@ -48,10 +50,12 @@ import to render
 
 - `from pathlib import Path`
 - `from dotenv import load_dotenv`
+- `load_dotenv(BASE_DIR / ".env")`
 
-update environment variables to .env definitions:
+update environment variables with .env definitions, e.g.:
+- `SECRET_KEY = os.getenv("SECRET_KEY")`
+- `DEBUG = os.getenv("DEBUG", "False") == "True"`
 
-`DEBUG = os.getenv("DEBUG", "False") == "True"`
 
 **allowed hosts**
 
@@ -104,6 +108,8 @@ DATABASES = {
 
 ## 3. freeze requirements
 
+cd to repo root:
+
 - `pip freeze > requirements.txt`
 
 ## 4. deployment
@@ -111,7 +117,7 @@ DATABASES = {
 in render settings:
 
 - set root directory to django root
-- build command: `pip install -r requirements.txt && python manage.py collectstatic --noinput`
+- build command: `pip install -r ../requirements.txt && python manage.py collectstatic --noinput`
 - start command: `gunicorn DJANGO_PROJECT_NAME.wsgi:application --bind 0.0.0.0:$PORT`
 
 
