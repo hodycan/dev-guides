@@ -14,12 +14,24 @@ See also:
 setting up new project
 ----------------------
 
+#### create and activate venv
+`python3 -m venv .venv`
+`source .venv/bin/activate`
+
+#### pip install django
+`pip install django`
+
 #### create project
 `$ django-admin startproject PROJECT_NAME`
 
+#### run server
+`python manage.py runserver`
+
+
 #### create app 
+
 inside PROJECT_NAME
-`$ python manage.py startapp APP_NAME`
+`$ python manage.py startapp core`
 
 add app to INSTALLED_APPS in settings.py
 `{APP}.apps.{APP}Config`
