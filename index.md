@@ -1,3 +1,9 @@
+general:
+
+- [pip-favs](pip-favs.md)
+- [pytest_cheatsheet](pytest_cheatsheet.md)
+
+
 django:
 
 - [deployment](django/deployment.md)
@@ -8,7 +14,3 @@ django:
 - [admin](django/admin.md)
 - [model-fields](django/model-fields.md)
 
-general:
-
-- [pip-favs](pip-favs.md)
-- [pytest-cheatsheet](pytest-cheatsheet.md)
